@@ -13,24 +13,21 @@ body {
 	height:100vh;
 	display:grid;
 	grid-template-columns: 
-		1fr 
 		450px
-		450px
-		1fr;
+		450px;
 /*	grid-row-gap:5px;*/
 	grid-column-gap: 5px;
 	grid-template-rows:
-		120px
-		50px
-		15px
+		1fr
+		1fr
+		1fr
 		1fr;
 	grid-template-areas:
-		"header header header header"
-		"menu menu menu menu"
-		". . . ."
-		". art-gallery1 art-gallery2 ."
+		"big-logo start"
+		"big-logo about-art"
+		"text shop-phys"
+        "contact res-dig"
 	;
-
 }
 
 table {
