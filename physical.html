@@ -1,0 +1,142 @@
+<style>
+    .physical-container {
+      background-color: #000;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      padding: 33px 20px;
+    }
+  
+    @media (max-width: 991px) {
+      .physical-container {
+        max-width: 100%;
+      }
+    }
+  
+    .physical-title {
+      color: #fff;
+      font: 400 96px VCR OSD Mono, sans-serif;
+    }
+  
+    @media (max-width: 991px) {
+      .physical-title {
+        max-width: 100%;
+        font-size: 40px;
+      }
+    }
+  
+    .physical-image {
+      aspect-ratio: 1;
+      object-fit: auto;
+      object-position: center;
+      width: 160px;
+      margin-top: 14px;
+      max-width: 100%;
+    }
+  
+    .grid-container {
+      margin-top: 7px;
+    }
+  
+    @media (max-width: 991px) {
+      .grid-container {
+        max-width: 100%;
+      }
+    }
+  
+    .grid-row {
+      gap: 20px;
+      display: flex;
+    }
+  
+    @media (max-width: 991px) {
+      .grid-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+      }
+    }
+  
+    .grid-column {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 25%;
+      margin-left: 0;
+    }
+  
+    @media (max-width: 991px) {
+      .grid-column {
+        width: 100%;
+      }
+    }
+  
+    .grid-item {
+      background-color: #9747ff;
+      width: 325px;
+      height: 325px;
+      aspect-ratio: 1;
+      margin: 0 auto;
+    }
+  
+    @media (max-width: 991px) {
+      .grid-item {
+        margin-top: 30px;
+      }
+    }
+  
+    .footer {
+      background-color: #545391;
+      align-self: stretch;
+      min-height: 29px;
+      margin-top: 5px;
+      width: 100%;
+    }
+  
+    @media (max-width: 991px) {
+      .footer {
+        max-width: 100%;
+      }
+    }
+  </style>
+  
+  <main>
+    <section class="physical-container">
+      <h1 class="physical-title">Physical</h1>
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/0256f3a71af4015ee80301af8002940546bf79b6a71851b04bbb3c1ef9caa6a4?apiKey=062fe98372c94d568e379a788e73262e&" alt="Physical" class="physical-image" />
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-column">
+            <div class="grid-item"></div>
+          </div>
+          <div class="grid-column">
+            <div class="grid-item"></div>
+          </div>
+          <div class="grid-column">
+            <div class="grid-item"></div>
+          </div>
+          <div class="grid-column">
+            <div class="grid-item"></div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-column">
+            <div class="grid-item"></div>
+          </div>
+          <div class="grid-column">
+            <div class="grid-item"></div>
+          </div>
+          <div class="grid-column">
+            <div class="grid-item"></div>
+          </div>
+          <div class="grid-column">
+            <div class="grid-item"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer"></footer>
+  </main>

@@ -1,0 +1,212 @@
+<style>
+    .main-container {
+      background-color: #000;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      gap: 20px;
+      padding: 33px 0;
+    }
+  
+    @media (max-width: 991px) {
+      .main-container {
+        max-width: 100%;
+        flex-wrap: wrap;
+      }
+    }
+  
+    .inner-container {
+      align-self: center;
+      display: flex;
+      width: 100%;
+      max-width: 1374px;
+      gap: 20px;
+    }
+  
+    @media (max-width: 991px) {
+      .inner-container {
+        max-width: 100%;
+        flex-wrap: wrap;
+      }
+    }
+  
+    .button-list {
+      align-self: end;
+      display: flex;
+      margin-top: 272px;
+      flex-direction: column;
+      gap: 20px;
+      font-size: 64px;
+      color: #cbccd5;
+      font-weight: 500;
+      white-space: nowrap;
+      flex-grow: 0;
+      flex-basis: 0;
+      width: fit-content;
+    }
+  
+    @media (max-width: 991px) {
+      .button-list {
+        margin-top: 40px;
+        font-size: 40px;
+        white-space: initial;
+      }
+    }
+  
+    .button {
+      font-family: VCRosdNEUE, sans-serif;
+      justify-content: center;
+      border-radius: 50px;
+      background-color: rgba(118, 117, 195, 0.5);
+      padding: 10px 20px;
+    }
+  
+    @media (max-width: 991px) {
+      .button {
+        font-size: 40px;
+        white-space: initial;
+      }
+    }
+  
+    .button + .button {
+      margin-top: 52px;
+    }
+  
+    @media (max-width: 991px) {
+      .button + .button {
+        margin-top: 40px;
+      }
+    }
+  
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      color: #fff;
+      flex-grow: 1;
+      flex-basis: 0;
+      width: fit-content;
+    }
+  
+    @media (max-width: 991px) {
+      .content-wrapper {
+        max-width: 100%;
+        flex-wrap: wrap;
+      }
+    }
+  
+    .title-wrapper {
+      display: flex;
+      width: 441px;
+      max-width: 100%;
+      flex-direction: column;
+      gap: 14px;
+      font-size: 96px;
+      font-weight: 400;
+      white-space: nowrap;
+    }
+  
+    @media (max-width: 991px) {
+      .title-wrapper {
+        flex-wrap: wrap;
+        font-size: 40px;
+        white-space: initial;
+      }
+    }
+  
+    .title {
+      font-family: VCR OSD Mono, sans-serif;
+      gap: 0px;
+    }
+  
+    @media (max-width: 991px) {
+      .title {
+        max-width: 100%;
+        flex-wrap: wrap;
+        font-size: 40px;
+      }
+    }
+  
+    .image {
+      aspect-ratio: 1;
+      object-fit: auto;
+      object-position: center;
+      width: 100%;
+      align-self: center;
+      gap: 0px;
+    }
+  
+    .description-wrapper {
+      border-radius: 30px;
+      background-color: #9747ff;
+      display: flex;
+      margin-top: 33px;
+      flex-direction: column;
+      align-items: end;
+      gap: 0px;
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 45px;
+      justify-content: center;
+      padding: 0 60px;
+    }
+  
+    @media (max-width: 991px) {
+      .description-wrapper {
+        max-width: 100%;
+        flex-wrap: wrap;
+        padding-left: 20px;
+      }
+    }
+  
+    .description {
+      font-family: VCRosdNEUE, sans-serif;
+      background-color: #545391;
+      width: 325px;
+      max-width: 100%;
+      align-items: start;
+      padding: 17px 14px 388px;
+    }
+  
+    @media (max-width: 991px) {
+      .description {
+        padding: 0 20px 40px 0;
+      }
+    }
+  
+    .footer {
+      background-color: #545391;
+      min-height: 29px;
+      margin-top: 37px;
+      width: 100%;
+      gap: 0px;
+    }
+  
+    @media (max-width: 991px) {
+      .footer {
+        max-width: 100%;
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+  
+  <main class="main-container">
+    <div class="inner-container">
+      <div class="button-list">
+        <button class="button">Button</button>
+        <button class="button">Button</button>
+        <button class="button">Button</button>
+        <button class="button">Button</button>
+      </div>
+      <div class="content-wrapper">
+        <div class="title-wrapper">
+          <h1 class="title">Services</h1>
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/0256f3a71af4015ee80301af8002940546bf79b6a71851b04bbb3c1ef9caa6a4?apiKey=062fe98372c94d568e379a788e73262e&" alt="" class="image" />
+        </div>
+        <div class="description-wrapper">
+          <p class="description">Description of item or service</p>
+        </div>
+      </div>
+    </div>
+    <footer class="footer"></footer>
+  </main>

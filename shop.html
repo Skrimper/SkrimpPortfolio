@@ -1,0 +1,106 @@
+<style>
+    .shop-container {
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    @media (max-width: 991px) {
+      .shop-container {
+        flex-wrap: wrap;
+      }
+    }
+  
+    .shop-header {
+      background-color: #000;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+      padding: 33px 20px;
+    }
+  
+    @media (max-width: 991px) {
+      .shop-header {
+        max-width: 100%;
+        flex-wrap: wrap;
+      }
+    }
+  
+    .shop-title {
+      color: #fff;
+      font: 400 96px VCR OSD Mono, sans-serif;
+    }
+  
+    @media (max-width: 991px) {
+      .shop-title {
+        font-size: 40px;
+      }
+    }
+  
+    .shop-image {
+      aspect-ratio: 1;
+      object-fit: cover;
+      width: 100%;
+    }
+  
+    .product-row {
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+    }
+  
+    @media (max-width: 991px) {
+      .product-row {
+        max-width: 100%;
+        flex-wrap: wrap;
+      }
+    }
+  
+    .product-item {
+      background-color: #9747ff;
+      width: 325px;
+      height: 325px;
+      aspect-ratio: 1;
+    }
+  
+    .shop-footer {
+      background-color: #545391;
+      align-self: stretch;
+      min-height: 29px;
+      margin-top: 5px;
+      width: 100%;
+    }
+  
+    @media (max-width: 991px) {
+      .shop-footer {
+        max-width: 100%;
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+  
+  <main class="shop-container">
+    <header class="shop-header">
+      <h1 class="shop-title">Shop</h1>
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/0256f3a71af4015ee80301af8002940546bf79b6a71851b04bbb3c1ef9caa6a4?apiKey=062fe98372c94d568e379a788e73262e&" alt="Shop banner" class="shop-image" />
+    </header>
+  
+    <section class="product-row">
+      <div class="product-item"></div>
+      <div class="product-item"></div>
+      <div class="product-item"></div>
+      <div class="product-item"></div>
+    </section>
+  
+    <section class="product-row">
+      <div class="product-item"></div>
+      <div class="product-item"></div>
+      <div class="product-item"></div>
+      <div class="product-item"></div>
+    </section>
+  
+    <footer class="shop-footer"></footer>
+  </main>

@@ -1,54 +1,354 @@
-<!doctype html>
-<html>
-<head>
-	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
-	<title>index</title>
-	<link rel="stylesheet" type="text/css" href="style.css"/>
-</head>
-<body>
-	<div id="site-wrap">
-		<div>
+<style>
+	.container {
+	  background-color: #fff;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	}
+
+	a { text-decoration: none; }
+  
+	.header {
+	  background-color: #000;
+	  display: flex;
+	  width: 100%;
+	  flex-direction: column;
+	  padding: 0 66px 38px 22px;
+	}
+  
+	@media (max-width: 991px) {
+	  .header {
+		max-width: 100%;
+		padding: 0 20px;
+	  }
+	}
+  
+	.header-content {
+	  gap: 20px;
+	  display: flex;
+	}
+  
+	@media (max-width: 991px) {
+	  .header-content {
+		flex-direction: column;
+		align-items: stretch;
+		gap: 0;
+	  }
+	}
+  
+	.header-left {
+	  display: flex;
+	  flex-direction: column;
+	  line-height: normal;
+	  width: 50%;
+	  margin-left: 0;
+	}
+  
+	@media (max-width: 991px) {
+	  .header-left {
+		width: 100%;
+	  }
+	}
+  
+	.header-image-wrapper {
+	  display: flex;
+	  flex-grow: 1;
+	  flex-direction: column;
+	  font-size: 64px;
+	  color: #fff;
+	  font-weight: 500;
+	}
+  
+	@media (max-width: 991px) {
+	  .header-image-wrapper {
+		max-width: 100%;
+		margin-top: 40px;
+		font-size: 40px;
+	  }
+	}
+  
+	.header-image {
+	  aspect-ratio: 1;
+	  object-fit: auto;
+	  object-position: center;
+	  width: 100%;
+	}
+  
+	@media (max-width: 991px) {
+	  .header-image {
+		max-width: 100%;
+	  }
+	}
+  
+	.header-image-caption {
+	  font-family: VCR OSD Mono, sans-serif;
+	  margin: 47px 51px 0;
+	}
+  
+	@media (max-width: 991px) {
+	  .header-image-caption {
+		max-width: 100%;
+		font-size: 40px;
+		margin: 40px 10px 0 0;
+	  }
+	}
+  
+	.header-right {
+	  display: flex;
+	  flex-direction: column;
+	  line-height: normal;
+	  width: 50%;
+	  margin-left: 20px;
+	}
+  
+	@media (max-width: 991px) {
+	  .header-right {
+		width: 100%;
+	  }
+	}
+  
+	.header-title-wrapper {
+	  display: flex;
+	  flex-direction: column;
+	  align-self: stretch;
+	  margin: auto 0;
+	}
+  
+	@media (max-width: 991px) {
+	  .header-title-wrapper {
+		max-width: 100%;
+		margin-top: 40px;
+	  }
+	}
+  
+	.header-title {
+	  color: #fff;
+	  -webkit-text-stroke-width: 1;
+	  -webkit-text-stroke-color: #000;
+	  border-color: rgba(0, 0, 0, 1);
+	  border-style: solid;
+	  border-width: 1px;
+	  font: 400 96px/120px VCR OSD Mono, -apple-system, Roboto, Helvetica, sans-serif;
+	}
+  
+	@media (max-width: 991px) {
+	  .header-title {
+		max-width: 100%;
+		font-size: 40px;
+		line-height: 56px;
+	  }
+	}
+  
+	.header-nav {
+	  margin-top: 96px;
+	}
+  
+	@media (max-width: 991px) {
+	  .header-nav {
+		max-width: 100%;
+		margin-top: 40px;
+	  }
+	}
+  
+	.header-nav-row {
+	  gap: 20px;
+	  display: flex;
+	}
+  
+	@media (max-width: 991px) {
+	  .header-nav-row {
+		flex-direction: column;
+		align-items: stretch;
+		gap: 0;
+	  }
+	}
+  
+	.header-nav-item {
+	  justify-content: center;
+	  border-radius: 50px;
+	  box-shadow: 0 5px 4px 0 rgba(150, 150, 150, 0.74);
+	  background-color: var(--purple-1, #7675c3);
+	  flex-grow: 1;
+	  color: var(--black-1, #000);
+	  white-space: nowrap;
+	  width: 100%;
+	  padding: 10px 20px;
+	  font: 500 64px VCR OSD Mono, sans-serif;
+	}
+  
+	@media (max-width: 991px) {
+	  .header-nav-item {
+		font-size: 40px;
+		margin-top: 19px;
+		white-space: initial;
+		padding: 0 5px;
+	  }
+	}
+  
+	.header-nav-item-right {
+	  display: flex;
+	  flex-direction: column;
+	  line-height: normal;
+	  width: 50%;
+	  margin-left: 20px;
+	}
+  
+	@media (max-width: 991px) {
+	  .header-nav-item-right {
+		width: 100%;
+	  }
+	}
+  
+	.header-nav-row-2 {
+	  margin-top: 57px;
+	}
+  
+	@media (max-width: 991px) {
+	  .header-nav-row-2 {
+		max-width: 100%;
+		margin-top: 40px;
+	  }
+	}
+  
+	.main-content {
+	  gap: 20px;
+	  display: flex;
+	}
+  
+	@media (max-width: 991px) {
+	  .main-content {
+		flex-direction: column;
+		align-items: stretch;
+		gap: 0;
+	  }
+	}
+  
+	.contact-form {
+	  background-color: #d9d9d9;
+	  flex-grow: 1;
+	  color: #000;
+	  width: 100%;
+	  justify-content: center;
+	  padding: 68px 42px;
+	  font: 500 64px VCR OSD Mono, sans-serif;
+	}
+  
+	@media (max-width: 991px) {
+	  .contact-form {
+		max-width: 100%;
+		font-size: 40px;
+		margin-top: 40px;
+		padding: 0 20px;
+	  }
+	}
+  
+	.main-content-right {
+	  display: flex;
+	  flex-direction: column;
+	  line-height: normal;
+	  width: 50%;
+	  margin-left: 20px;
+	}
+  
+	@media (max-width: 991px) {
+	  .main-content-right {
+		width: 100%;
+	  }
+	}
+  
+	.main-content-nav {
+	  margin-top: 7px;
+	}
+  
+	@media (max-width: 991px) {
+	  .main-content-nav {
+		max-width: 100%;
+		margin-top: 40px;
+	  }
+	}
+  
+	.main-content-nav-row {
+	  gap: 20px;
+	  display: flex;
+	}
+  
+	@media (max-width: 991px) {
+	  .main-content-nav-row {
+		flex-direction: column;
+		align-items: stretch;
+		gap: 0;
+	  }
+	}
+  
+	.main-content-nav-item {
+	  justify-content: center;
+	  border-radius: 50px;
+	  box-shadow: 0 5px 4px 0 rgba(150, 150, 150, 0.74);
+	  background-color: var(--purple-1, #7675c3);
+	  flex-grow: 1;
+	  color: var(--black-1, #000);
+	  white-space: nowrap;
+	  width: 100%;
+	  padding: 10px 20px;
+	  font: 500 64px VCR OSD Mono, sans-serif;
+	}
+  
+	@media (max-width: 991px) {
+	  .main-content-nav-item {
+		font-size: 40px;
+		margin-top: 19px;
+		white-space: initial;
+	  }
+	}
+  </style>
+  
+  <div class="container">
+	<header class="header">
+	  <div class="header-content">
+		<div class="header-left">
+		  <div class="header-image-wrapper">
+			<img src="https://cdn.builder.io/api/v1/image/assets/TEMP/7c6189b1abaaed741cf49a2b44af0bbccf9e5305a29645b3fae3dbdd8a17fed8?apiKey=062fe98372c94d568e379a788e73262e&" alt="" class="header-image" />
+			<div class="header-image-caption">Something Specific?</div>
+		  </div>
 		</div>
-        <div class="big-logo">
-            <ul class="title">
-                <li><a class="active" href="index.html"><img src="Assets/logoo@2x.png" class="logo" alt="logo"></a></li>
-                <li><h2>Something Specific?</h2></li>
-				<li class="contact-form"><a href="contact.html">Contact Form Here</a></li>
-            </ul>
-        </div>
-		<div class="start">
-            <ul class="title">
-                <li><h1>Where would you like to start?</h2></li>
-            </ul>
-        </div>
-		<div class="about-art">
-			<ul class="nav">
-				<li><a href="about.html">About</a></li>
-                <li><a href="artwork.html">Artwork</a></li>
-			</ul>
+		<div class="header-right">
+		  <div class="header-title-wrapper">
+			<h1 class="header-title">
+			  Where Would <br />
+			  you like to <br />
+			  start?
+			</h1>
+			<nav class="header-nav">
+			  <div class="header-nav-row">
+				<a href="about.html" class="header-nav-item">About</a>
+				<div class="header-nav-item-right">
+				  <a href="artwork.html" class="header-nav-item">Artwork</a>
+				</div>
+			  </div>
+			</nav>
+			<nav class="header-nav header-nav-row-2">
+			  <div class="header-nav-row">
+				<a href="shop.html" class="header-nav-item">Shop</a>
+				<div class="header-nav-item-right">
+				  <a href="physical.html" class="header-nav-item">Physical</a>
+				</div>
+			  </div>
+			</nav>
+		  </div>
 		</div>
-		<div class="shop-phys">
-			<ul class="nav">
-				<li><a href="physical.html">Physical</a></li>
-                <li><a href="shop.html">Shop</a></li>
-			</ul>
+	  </div>
+	</header>
+	<main>
+	  <div class="main-content">
+		<a href="contact-form.html" class="contact-form">Contact Form Here</a>
+		<div class="main-content-right">
+		  <nav class="main-content-nav">
+			<div class="main-content-nav-row">
+			  <a href="resume.html" class="main-content-nav-item">Resume</a>
+			  <a href="digital.html" class="main-content-nav-item">Digital</a>
+			</div>
+		  </nav>
 		</div>
-		<div class="res-dig">
-			<ul class="nav">
-				<li><a href="resume.html">Resume</a></li>
-				<li><a href="Digital.html">Digital</a></li>				
-			</ul>
-		</div>
-		<div class=line></div>
-		<div class="menu-phone">
-			<ul class="nav-phone">
-				<li><a href="about.html"><img src="Assets/first.png" class="first" alt="first"></a></li>
-				<li><a href="resume.html"><img src="Assets/second.png" class="second" alt="second"></a></li>
-				<li><a href="Digital.html"><img src="Assets/third.png" class="third" alt="third"></a></li>
-				<li><a href="physical.html"><img src="Assets/fourth.png" class="fourth" alt="fourth"></a></li>
-				<li><a href="contact.html"><img src="Assets/fifth.png" class="fifth" alt="fifth"></a></li>
-			</ul>
-		</div>
-	</div>
-</body>
-</html>
+	  </div>
+	</main>
+  </div>

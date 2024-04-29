@@ -8,14 +8,178 @@ Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
-
+#site-wrap {
+	background-color: #121126;
+	height:100%;
+	display:grid;
+	grid-template-columns: 
+		300px 
+		300px;
+/*	grid-row-gap:5px;*/
+	grid-column-gap: 5px;
+	grid-template-rows:
+		1000px;
+	grid-template-areas:
+		"logo" "buttons"
+	;
+}
+.grid {
+	background-color: #121126;
+}
 body {
 	margin:0;
 	padding:0;
 	font-family: VCR OSD MONO;
 	line-height: 1.5em;
-	background-color: #F2F2F2;
+	background-color: #121126;
 }
+.flex_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px 10px;
+    margin: 0px 22px 29px;
+    padding: 0px 46px 0px 0px;
+}
+.flex_col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    min-width: 0px;
+}
+.image {
+    width: 100%;
+}
+.header {
+    margin: 40px 0px 0px;
+    font: 400 96px/1.2;
+    color: rgb(255, 255, 255);
+}
+.header1 {
+    margin: 40px 0px 0px;
+    font: 400 64px/1.2;
+    color: rgb(255, 255, 255);
+}
+.contact-form {
+    width: 93.98%;
+    font: 400 64px/1.2;
+    color: rgb(0, 0, 0);
+    background-color: rgb(217, 217, 217);
+    padding: 55px 42px 48px 42px;
+}
+.h1 {
+    width: 93.98%;
+    font: 400 64px/1.2;
+    color: rgb(0, 0, 0);
+    background-color: rgb(217, 217, 217);
+    padding: 55px 42px 48px 42px;
+}
+.flex_col1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 73px 0px;
+    width: 20%;
+    min-width: 0px;
+}
+.h2 {
+    font: 400 96px/1.25;
+    color: rgb(255, 255, 255);
+}
+.flex_row1 {
+    display: flex;
+    align-items: center;
+    gap: 0px 19px;
+    width: 100%;
+}
+.flex_col2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 57px 0px;
+    width: 294px;
+    min-width: 0px;
+}
+  .box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(118, 117, 195);
+    border-radius: 50px 50px 50px 50px;
+    filter: drop-shadow(0px 5px 4px rgba(149, 149, 149, 0.737));
+  }
+  .hero_title11 {
+    position: relative;
+    margin: 24px 53px 16px 55px;
+    width: 186px;
+    height: 77px;
+    font: 400 64px/1.2 "Custom", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .box1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 294px;
+    height: 117px;
+    background-color: rgb(118, 117, 195);
+    border-radius: 50px 50px 50px 50px;
+    filter: drop-shadow(0px 5px 4px rgba(149, 149, 149, 0.737));
+  }
+  .hero_title12 {
+    margin: 24px 61px 16px 65px;
+    width: 168px;
+    height: 77px;
+    font: 400 64px/1.2 "Custom", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .box2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(118, 117, 195);
+    border-radius: 50px 50px 50px 50px;
+    filter: drop-shadow(0px 5px 4px rgba(149, 149, 149, 0.737));
+  }
+  .hero_title13 {
+    margin: 24px 69px 16px 75px;
+    width: 150px;
+    height: 77px;
+    font: 400 64px/1.2 "Custom", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .hero_title14 {
+    margin: 24px 24px 16px 31px;
+    width: 239px;
+    height: 77px;
+    font: 400 64px/1.2 "Custom", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .hero_title15 {
+    margin: 24px 52px 16px 25px;
+    width: 217px;
+    height: 77px;
+    font: 400 64px/1.2 "Custom", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .hero_title16 {
+    margin: 24px 30px 16px 25px;
+    width: 239px;
+    height: 77px;
+    font: 400 64px/1.2 "Custom", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .hero_title17 {
+    margin: 24px 55px 16px 61px;
+    width: 178px;
+    height: 77px;
+    font: 400 64px/1.2 "Custom", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
 
 #site-wrap {
 	background-color: #F2F2F2;
@@ -115,6 +279,10 @@ h1{
 	padding-bottom: 7px;
 	width: 305px;
 	border-bottom: solid 4px #B4C0D9;
+}
+.header2{
+	font: 400 64px/1.2;
+    color: rgb(0, 0, 0);
 }
 .header a {
 	text-decoration: none;
