@@ -1,6 +1,10 @@
 <style>
+	html, body {
+		overscroll-behavior: contain; /* Prevent default overscroll behavior */
+		background-color: #000; /* Set the background color of the body to match your webpage */
+	}
 	.container {
-	  background-color: #fff;
+	  background-color:#000;
 	  display: flex;
 	  flex-direction: column;
 	  justify-content: center;
@@ -14,6 +18,7 @@
 	  width: 100%;
 	  flex-direction: column;
 	  padding: 0 66px 38px 22px;
+	  /* height: 100vh; */
 	}
   
 	@media (max-width: 991px) {
@@ -291,14 +296,17 @@
 	  width: 100%;
 	  padding: 10px 20px;
 	  font: 500 64px VCR OSD Mono, sans-serif;
+	  text-align: center; 
 	}
   
 	@media (max-width: 991px) {
-	  .main-content-nav-item {
-		font-size: 40px;
-		margin-top: 19px;
-		white-space: initial;
-	  }
+	.header-nav-item,
+	.main-content-nav-item {
+			font-size: 40px;
+			margin-top: 19px;
+			white-space: initial;
+			padding: 10px 20px; /* Adjust as needed */
+		}
 	}
   </style>
   
@@ -309,6 +317,9 @@
 		  <div class="header-image-wrapper">
 			<img src="./Assets/logoo@2x.png" alt="" class="header-image" />
 			<div class="header-image-caption">Something Specific?</div>
+			<div class="main-content">
+				<a href="contact-form.html" class="contact-form">Contact Form Here</a>
+			</div>
 		  </div>
 		</div>
 		<div class="header-right">
@@ -334,21 +345,15 @@
 				</div>
 			  </div>
 			</nav>
-		  </div>
+			<nav class="header-nav header-nav-row-3">
+				<div class="header-nav-row">
+					<a href="resume.html" class="header-nav-item">Resume</a>
+				  <div class="header-nav-item-right">
+					<a href="digital.html" class="header-nav-item">Digital</a>
+				  </div>
+				</div>
+			</nav>
 		</div>
 	  </div>
 	</header>
-	<main>
-	  <div class="main-content">
-		<a href="contact-form.html" class="contact-form">Contact Form Here</a>
-		<div class="main-content-right">
-		  <nav class="main-content-nav">
-			<div class="main-content-nav-row">
-			  <a href="resume.html" class="main-content-nav-item">Resume</a>
-			  <a href="digital.html" class="main-content-nav-item">Digital</a>
-			</div>
-		  </nav>
-		</div>
-	  </div>
-	</main>
   </div>
