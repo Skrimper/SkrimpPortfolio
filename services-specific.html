@@ -1,12 +1,20 @@
 
   <link rel="stylesheet" href="style.css">
+  <script>
+    function changeText(newDescript) {
+      document.getElementById("descript").innerHTML = newDescript;
+    }
+    function getElementById(id) {
+
+    }
+  </script>
   <main class="main-container">
     <div class="inner-container">
       <div class="button-list">
-        <button class="button">Button</button>
-        <button class="button">Button</button>
-        <button class="button">Button</button>
-        <button class="button">Button</button>
+        <button class="button" onclick="changeText('I am excited to offer ski tuning services, including edge sharpening, edge cleanup, ski waxing, and board waxing. I am also able to ptex fill core shots and do other ski maintenance. Contact me for more info.')">Ski Tuning</button>
+        <button class="button" onclick="changeText('I have coached freeride and freestyle skiing, and I am happy to do one-on-one or small group ski lessons. Contact me for more info.')">Ski Lessons</button>
+        <button class="button" onclick="changeText('I am just getting started in my graphic design career, so my current prices are fairly low. I would love to help you out with any graphic design project you might need, including posters, flyers, signs, and social media and web designs')">Graphic Design</button>
+        <button class="button" onclick="changeText('I have experience doing website design with my own website, Wix, and Wordpress. I am honing my skills doing sites from scratch, so I would be happy to do these for a reduced price.')">Website Building</button>
       </div>
       <div class="content-wrapper">
         <div class="title-wrapper">
@@ -16,7 +24,7 @@
           </a>
         </div>
         <div class="description-wrapper">
-          <p class="description">Description of item or service</p>
+          <p id="descript" class="description">Description of item or service</p>
         </div>
       </div>
     </div>
